@@ -1,0 +1,26 @@
+<div class="bg-fondo">
+ <div class="container">
+ <div class="row">
+   <form action="/builds" method="post">
+                    <div class="form-group mt-3">
+                        <input type="text" name="aBuscar" placeholder="Ingrese el Rol"
+                            class="form-control">
+                    </div>
+                    <div class="gap-2">
+                        <button class="btn btn-info">Buscar</button>
+                    </div>
+                </form>
+    {{#each Tbuilds}}
+<div class="card fullcards bg-Fcard" style="width: 18rem;">
+  <img src="/images/{{uid}}" style="height: 130px; width: 130px;" class="card-img-top img-card" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Arma Principal:{{Arma_principal}}</h5>
+    <p class="card-text">Rol del arma:{{Rol_zvz}}</p>
+  </div>
+</div>
+ {{/each}}
+ </div> 
+  </div> 
+   </div> 
+ 
+

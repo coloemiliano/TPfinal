@@ -1,0 +1,30 @@
+<div class="container-fluid bg-dark m-0" style="height : 100vh">
+    <div class="row justify-content-center" style="height : 100vh">
+        <div class="col-7 text-light mt-5">
+            <form method="post" action="/admin/adminMiembros/agregar">
+                <div class="form-group">
+                    <label for="miembro">Nombre  Usuario<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="miembro" id="miembro">
+                </div>
+                <div class="form-group">
+                    <label for="Rango">Rango<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="Rango" id="Rango">
+                </div>
+                 <div class="form-group">
+                    <label for="contraseña">Contraseña<span class="text-danger">*</span></label>
+                    <input type="password" class="form-control" name="contraseña" id="contraseña">
+                </div>
+                <label for="Rol_principal">Rol Principal<span class="text-danger">*</span></label>
+                <select name="Rol_principal" id="Rol_principal" class="form-select">
+                    {{#each rolzvz}}
+                    <option value="{{id_rol}}">{{Rol_zvz}}</option>
+                    {{/each}}
+                </select>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-info mt-3">Agregar Miembro</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,22 @@
+ <div class="bg-fondo">
+ <div class="container">
+   <a href="/admin/adminBuilds/crear">
+<div class="d-grid gap-2 bg-Bcrear">
+<button class="btn btn-outline-warning" style="width: 927px;" type="button">Agregar Build</button></a>
+</div>
+</a>
+   <div class="row">
+    {{#each builds}}
+<div class="card fullcards bg-Fcard" style="width: 225px;">
+  <img src="/images/{{uid}}" style="height: 130px; width: 130px;" class="card-img-top img-card" alt="no, imagen">
+  <div class="card-body">
+    <h5 class="card-title">Arma Principal:{{Arma_principal}}</h5>
+    <p class="card-text">Rol del arma:{{Rol_zvz}}</p>
+     <a href="/admin/adminBuilds/update/{{id_build}}"><button type="button" class="btn btn-outline-info">EDITAR</button></a>
+     <td><a href="/admin/adminBuilds/eliminar/{{id_build}}"><button type="button" class="btn btn-outline-danger">ELIMINAR</button></a></td>
+  </div>
+</div>
+ {{/each}}
+ </div>
+ </div> 
+ </div>

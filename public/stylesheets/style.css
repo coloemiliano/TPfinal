@@ -1,0 +1,81 @@
+
+.alFondo {
+ line-height: 70%;
+ margin-left: 80%;
+  color: rgb(22, 22, 22); 
+  opacity: 100%;
+}
+.pieDePagina {
+  background-color: rgb(250, 237, 54);
+}
+.bg-amarillo {
+  background-color: rgb(250, 237, 54);
+  color: black;
+  opacity: 100%;
+}
+.bg-discord {
+  color: blueviolet;
+}
+.bg-from {
+background-color: rgb(15, 15, 15);
+color: rgb(235, 27, 0);
+border-color: white;
+border-style: solid;
+margin-top: 100px!important;
+}
+.bg-fondo{
+  background-color:rgb(19, 19, 19) !important;
+}
+.bg-textoAplicar{
+  color: rgb(255, 0, 0);
+}
+.bg-tt{
+  color: white !important;
+}
+.fullcards{
+margin-left: 10px;
+margin-top: 10px !important;
+border-color: black !important;
+border-style: solid !important;
+}
+.aplicarB{
+  margin-bottom: 194px !important;
+}
+.img-card{
+  margin-right: 50px !important ;
+}
+.bg-Fcard{
+  background-color:rgb(19, 19, 19) !important;
+ color: white !important;
+}
+.bg-Bcrear{
+  justify-content: flex-start;
+}
+.bg-textoV{
+ color:aqua;
+}
+.m-video{
+  margin-left: 180px;
+ }
+ .T-text{
+  color: rgb(255, 46, 46);
+  text-decoration-line: underline;
+ }
+ .N-text{
+  color: aliceblue !important;
+ }
+ .bg-Flist{
+  background-color:rgb(19, 19, 19) !important;
+ color: rgb(255, 238, 0) !important;
+border-bottom-width: 3px;
+border-top-width: 3px;
+border-style: solid;
+border-bottom-color: red !important;
+border-top-color: red !important;
+border-left-color: red !important;
+border-right-color: red !important;
+text-align: center !important;
+}
+.bg-tabla{
+  margin-top: 150px !important;
+ }

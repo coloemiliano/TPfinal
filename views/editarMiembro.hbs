@@ -1,0 +1,29 @@
+
+<div class="container-fluid bg-dark m-0" style="height : 100vh">
+    <div class="row justify-content-center align-items-center" style="height : 100vh">
+        <div class="col-7 text-light">
+            <form method="post" action="/admin/adminMiembros/editar/{{usuario.id_miembro}}">
+                <div class="form-group">
+                    <label for="usuario">Nombre  Usuario<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="usuario" id="usuario"
+                        value="{{usuario.usuario}}">
+                </div>
+                <div class="form-group">
+                    <label for="Rango">Rango<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="Rango" id="Rango"
+                        value="{{usuario.Rango}}">
+                </div>
+                <label for="Rol_principal">Rol Principal<span class="text-danger">*</span></label>
+                <select name="Rol_principal" id="Rol_principal" class="form-select">
+                     <option value="{{usuario.Rol_principal}}">{{usuario.Rol_zvz}}</option>
+                    {{#each rolzvz}}
+                    <option value="{{id_rol}}">{{Rol_zvz}}</option>
+                    {{/each}}
+                </select>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-info mt-3">Editar Usuario</button>
+                </div>
+            </form>
+         </div>
+    </div>
+</div>

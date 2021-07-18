@@ -1,0 +1,26 @@
+<div class="bg-fondo">
+  <div class="container bg-tt">
+<table class="table bg-tt">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre de usuario</th>
+      <th scope="col">Rango</th>
+      <th scope="col">Rol Principal</th>
+      <th scope="col">-</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each miembros}}
+    <tr>
+      <th scope="row">-</th>
+      <td>{{usuario}}</td>
+      <td>{{Rango}}</td>
+      <td>{{Rol_zvz}}</td>
+      <td><a href="/miembros/single/{{id_miembro}}"><button type="button" class="btn btn-outline-info">Ver más</button></a></td>
+    </tr>
+        {{/each}}
+  </tbody>
+</table>
+</div>
+</div>

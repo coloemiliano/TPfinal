@@ -1,0 +1,33 @@
+<div class="bg-fondo">
+  <div class="container bg-tt">
+<table class="table bg-tt">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre de usuario</th>
+      <th scope="col">Rango</th>
+      <th scope="col">Rol Principal</th>
+      <th scope="col">--</th>
+      <th scope="col">--</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each miembros}}
+    <tr>
+      <th scope="row">-</th>
+      <td>{{usuario}}</td>
+      <td>{{Rango}}</td>
+      <td>{{Rol_zvz}}</td>
+      <td><a href="/admin/adminMiembros/editar/{{id_miembro}}"><button type="button" class="btn btn-outline-info">EDITAR</button></a></td>
+      <td><a href="/admin/adminMiembros/eliminar/{{id_miembro}}"><button type="button" class="btn btn-outline-danger">ELIMINAR</button></a></td>
+    </tr>
+        {{/each}}
+  </tbody>
+</table>
+<a href="/admin/adminMiembros/agregar">
+<div class="d-grid gap-2">
+<button class="btn btn-outline-warning" type="button">Agregar Miembro</button></a>
+</div>
+</a>
+</div>
+</div>

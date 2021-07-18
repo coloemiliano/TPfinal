@@ -1,0 +1,28 @@
+
+<div class="container-fluid bg-dark m-0" style="height : 100vh">
+    <div class="row justify-content-center align-items-center" style="height : 100vh">
+        <div class="col-7 text-light">
+            <form method="POST" action="/admin/adminBuilds/update/{{build.id_build}}" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="Arma_principal">Nombre del Arma<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="Arma_principal" id="Arma_principal"
+                        value="{{build.Arma_principal}}">
+                </div>
+                <label for="Rol_build">Rol del Arma<span class="text-danger">*</span></label>
+                <select name="Rol_build" id="Rol_build" class="form-select">
+                     <option value="{{build.Rol_build}}">{{build.Rol_zvz}}</option>
+                    {{#each rolzvz}}
+                    <option value="{{id_rol}}">{{Rol_zvz}}</option>
+                    {{/each}}
+                </select>
+                   <div class="form-group">
+                    <label for="imagen">Editar la imagen<span class="text-danger">*</span></label>
+                    <input type="file" name="imagen" id="imagen">
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-info mt-3">Editar Build</button>
+                </div>
+            </form>
+         </div>
+    </div>
+</div>
